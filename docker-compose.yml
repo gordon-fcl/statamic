@@ -1,0 +1,26 @@
+services:
+  statamic-app:
+    build: .
+    container_name: statamic_app
+    user: "1000:1000" # Runs as YOU to keep perms perfect
+    restart: always
+    volumes:
+      - ./site:/var/www/html
+    networks:
+      - web-stack
+
+  statamic-web:
+    image: nginx:alpine
+    container_name: statamic_web
+    restart: always
+    volumes:
+      - ./site:/var/www/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - statamic-app
+    networks:
+      - web-stack
+
+networks:
+  web-stack:
+    external: true

@@ -1,0 +1,22 @@
+services:
+  statamic:
+    image: 'serversideup/php:8.4-fpm-nginx'
+    container_name: statamic
+    user: "1000:1000"
+    environment:
+      - APP_ENV=production
+      - APP_KEY=base64:R76ilOiR5uK+xC3967uPQqrKd9B8e1BG7CnF8UKcoeI=
+      - APP_URL=https://farington-consultancy.co.uk
+      - TRUSTED_PROXIES=*
+      - ERRORS=1
+      - WEBROOT=/var/www/html/public
+      - PHP_UPLOAD_MAX_FILESIZE=100M
+      - AUTORUN_ENABLED=true
+    volumes:
+      - ./site:/var/www/html:U
+    networks:
+      - web-stack
+
+networks:
+  web-stack:
+    external: true

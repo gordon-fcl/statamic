@@ -4,16 +4,37 @@
 @source "../views";
 @source "../../content";
 
+/* Fonts - Sophisticated, experienced, stable */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
 @theme {
   --color-primary: #1a3e52;
   --color-secondary: #a7a9a7;
   --color-accent: #2c5f7a;
   --color-neutral: #2d3748;
   
+  /* Typography */
+  --font-serif: 'Crimson Pro', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #1a3e52 0%, #2c5f7a 100%);
   --gradient-accent: linear-gradient(135deg, #2c5f7a 0%, #4a9fb8 100%);
   --gradient-glass: linear-gradient(135deg, rgba(26, 62, 82, 0.1) 0%, rgba(44, 95, 122, 0.05) 100%);
+}
+
+/* Base typography */
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 /* Glass morphism utilities */

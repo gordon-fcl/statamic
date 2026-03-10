@@ -11,7 +11,7 @@ updated_at: 1710000000
 
 ## Get In Touch
 
-Ready to leverage our 20+ years of experience and Ex-CTO expertise for your next project? We would love to hear about your technology challenges and discuss how we can help.
+Ready to leverage our 15+ years of experience and Ex-CTO expertise for your next project? We would love to hear about your technology challenges and discuss how we can help.
 
 ## Our Approach
 

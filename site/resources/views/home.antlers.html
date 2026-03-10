@@ -1,45 +1,63 @@
 {{# Hero Section #}}
-<section class="hero min-h-[70vh] bg-base-100">
-  <div class="hero-content text-left max-w-5xl w-full">
+<section class="relative min-h-[80vh] flex items-center overflow-hidden">
+  {{# Gradient Background #}}
+  <div class="absolute inset-0 gradient-primary opacity-5"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-transparent via-[#2c5f7a]/5 to-[#4a9fb8]/10"></div>
+  
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
     <div class="max-w-3xl">
-      <h1 class="text-5xl font-bold mb-6">{{ hero_title }}</h1>
-      <p class="text-xl mb-8 opacity-80">{{ hero_subtitle }}</p>
-      <a href="/contact" class="btn btn-primary">Book a Consultation</a>
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#1a3e52] to-[#2c5f7a] bg-clip-text text-transparent leading-tight">
+        {{ hero_title }}
+      </h1>
+      <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+        {{ hero_subtitle }}
+      </p>
+      <a href="/contact" class="inline-block gradient-primary text-white px-8 py-4 rounded-xl text-sm font-semibold transition-smooth hover:scale-105 hover:shadow-2xl glow-teal">
+        Book a Consultation
+      </a>
     </div>
   </div>
 </section>
 
 {{# Core Specialisms #}}
-<section class="py-20 bg-base-200">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-12">Core Specialisms</h2>
+<section class="py-20 relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold mb-12 bg-gradient-to-r from-[#1a3e52] to-[#2c5f7a] bg-clip-text text-transparent">Core Specialisms</h2>
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="card bg-base-100">
-        <div class="card-body">
-          <h3 class="card-title">Legacy Modernisation</h3>
-          <p>Stabilising and evolving critical systems in finance and manufacturing. Turning technical debt into strategic advantage.</p>
-          <div class="card-actions">
-            <a href="/services#legacy" class="link link-primary">Learn more →</a>
-          </div>
+      <div class="glass-dark p-8 rounded-2xl transition-smooth hover:scale-105 hover:shadow-2xl group">
+        <div class="w-12 h-12 rounded-xl gradient-primary mb-6 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+          </svg>
         </div>
+        <h3 class="text-xl font-semibold mb-4 group-hover:text-[#2c5f7a] transition-smooth">Legacy Modernisation</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Stabilising and evolving critical systems in finance and manufacturing. Turning technical debt into strategic advantage.
+        </p>
       </div>
-      <div class="card bg-base-100">
-        <div class="card-body">
-          <h3 class="card-title">Fractional CTO Services</h3>
-          <p>Board-level technical leadership. Strategic guidance through growth, acquisition, and transformation.</p>
-          <div class="card-actions">
-            <a href="/services#cto" class="link link-primary">Learn more →</a>
-          </div>
+      
+      <div class="glass-dark p-8 rounded-2xl transition-smooth hover:scale-105 hover:shadow-2xl group">
+        <div class="w-12 h-12 rounded-xl gradient-accent mb-6 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+          </svg>
         </div>
+        <h3 class="text-xl font-semibold mb-4 group-hover:text-[#2c5f7a] transition-smooth">Fractional CTO Services</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Board-level technical leadership. Strategic guidance through growth, acquisition, and transformation.
+        </p>
       </div>
-      <div class="card bg-base-100">
-        <div class="card-body">
-          <h3 class="card-title">High-Performance Greenfield</h3>
-          <p>Modern edge platforms built for speed and scale. Leveraging AI-augmented workflows and cutting-edge architecture.</p>
-          <div class="card-actions">
-            <a href="/services#greenfield" class="link link-primary">Learn more →</a>
-          </div>
+      
+      <div class="glass-dark p-8 rounded-2xl transition-smooth hover:scale-105 hover:shadow-2xl group">
+        <div class="w-12 h-12 rounded-xl gradient-primary mb-6 flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
         </div>
+        <h3 class="text-xl font-semibold mb-4 group-hover:text-[#2c5f7a] transition-smooth">High-Performance Greenfield</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Modern edge platforms built for speed and scale. Leveraging AI-augmented workflows and cutting-edge architecture.
+        </p>
       </div>
     </div>
   </div>

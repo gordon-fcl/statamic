@@ -1,17 +1,18 @@
-<div class="navbar bg-base-100 border-b border-base-300">
-  <div class="navbar-start">
-    <a href="/" class="flex items-center gap-2 px-2">
-      <img src="/logo-icon.svg" alt="Farington Consultancy" class="h-8 w-8">
-      <span class="text-lg font-semibold">Farington Consultancy</span>
-    </a>
+<nav class="glass fixed top-0 left-0 right-0 z-50 border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="/" class="flex items-center gap-3 transition-smooth hover:opacity-80">
+        <img src="/logo-icon.svg" alt="Farington Consultancy" class="h-8 w-8">
+        <span class="text-lg font-semibold bg-gradient-to-r from-[#1a3e52] to-[#2c5f7a] bg-clip-text text-transparent">Farington Consultancy</span>
+      </a>
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="/" class="text-sm font-medium transition-smooth hover:text-[#2c5f7a]">Home</a></li>
+        <li><a href="/services" class="text-sm font-medium transition-smooth hover:text-[#2c5f7a]">Services</a></li>
+        <li><a href="/work" class="text-sm font-medium transition-smooth hover:text-[#2c5f7a]">Work</a></li>
+        <li><a href="/insights" class="text-sm font-medium transition-smooth hover:text-[#2c5f7a]">Insights</a></li>
+        <li><a href="/contact" class="gradient-primary text-white px-6 py-2 rounded-lg text-sm font-medium transition-smooth hover:scale-105 hover:shadow-lg">Contact</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="navbar-end">
-    <ul class="menu menu-horizontal px-1 hidden md:flex">
-      <li><a href="/">Home</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/work">Work</a></li>
-      <li><a href="/insights">Insights</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-  </div>
-</div>
+</nav>
+<div class="h-16"></div>

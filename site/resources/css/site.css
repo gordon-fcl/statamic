@@ -4,8 +4,8 @@
 @source "../views";
 @source "../../content";
 
-/* Fonts - Sophisticated, experienced, stable */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
+/* Fonts - Sophisticated sans-serif pairing */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
 @theme {
   --color-primary: #1a3e52;
@@ -14,8 +14,8 @@
   --color-neutral: #2d3748;
   
   /* Typography */
-  --font-serif: 'Crimson Pro', Georgia, serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Sora', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
   
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #1a3e52 0%, #2c5f7a 100%);
@@ -25,14 +25,14 @@
 
 /* Base typography */
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-feature-settings: 'kern' 1, 'liga' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-weight: 600;
   letter-spacing: -0.02em;
 }

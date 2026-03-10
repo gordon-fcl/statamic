@@ -1,0 +1,62 @@
+<div class="hero bg-primary py-24">
+  <div class="hero-content text-center">
+    <div class="max-w-2xl">
+      <div class="badge badge-secondary mb-4">{{ category }}</div>
+      <h1 class="text-4xl font-bold text-primary-content">{{ title }}</h1>
+      <p class="py-6 text-primary-content/80">{{ date format="F j, Y" }} • {{ read_time }} min read</p>
+    </div>
+  </div>
+</div>
+
+<section class="py-16">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div class="grid lg:grid-cols-4 gap-12">
+      <div class="lg:col-span-3">
+        <div class="prose max-w-none">
+          {{ content }}
+        </div>
+        
+        <div class="divider my-12"></div>
+        
+        <div class="flex flex-wrap gap-2">
+          {{ tags }}
+          <div class="badge badge-outline">{{ title }}</div>
+          {{ /tags }}
+        </div>
+      </div>
+      
+      <div class="space-y-6">
+        {{ if author }}
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h3 class="card-title">Author</h3>
+            <div class="divider"></div>
+            <div class="flex items-center gap-3">
+              <div class="avatar">
+                <div class="w-12 rounded-full">
+                  <img src="{{ author:avatar }}" alt="{{ author:name }}">
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold">{{ author:name }}</div>
+                <div class="text-sm text-base-content/60">{{ author:title }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ /if }}
+        
+        <div class="card bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h3 class="card-title">Share</h3>
+            <div class="divider"></div>
+            <div class="flex gap-2">
+              <a href="#" class="btn btn-sm btn-outline">LinkedIn</a>
+              <a href="#" class="btn btn-sm btn-outline">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

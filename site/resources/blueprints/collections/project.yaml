@@ -1,0 +1,60 @@
+title: Project
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: slug
+            field:
+              type: slug
+              required: true
+              from: title
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+              instructions: Brief project description
+          -
+            handle: client
+            field:
+              type: text
+              display: Client
+          -
+            handle: project_url
+            field:
+              type: url
+              display: Project URL
+          -
+            handle: featured_image
+            field:
+              type: assets
+              display: Featured Image
+              max_files: 1
+              container: assets
+          -
+            handle: gallery
+            field:
+              type: assets
+              display: Gallery
+              container: assets
+          -
+            handle: technologies
+            field:
+              type: tags
+              display: Technologies
+          -
+            handle: content
+            field:
+              type: markdown
+              display: Content
+              localizable: true

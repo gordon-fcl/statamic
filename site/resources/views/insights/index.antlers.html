@@ -1,0 +1,30 @@
+<div class="hero bg-primary py-24">
+  <div class="hero-content text-center">
+    <div class="max-w-md">
+      <h1 class="text-4xl font-bold text-primary-content">{{ title }}</h1>
+      <p class="py-6 text-primary-content/80">{{ intro }}</p>
+    </div>
+  </div>
+</div>
+
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ collection:posts }}
+      <div class="card bg-base-100 shadow-xl">
+        <div class="card-body">
+          <div class="flex items-center gap-2 mb-2">
+            <div class="badge badge-primary">{{ category }}</div>
+            <span class="text-sm text-base-content/60">{{ date format="M j, Y" }}</span>
+          </div>
+          <h2 class="card-title">{{ title }}</h2>
+          <p>{{ excerpt }}</p>
+          <div class="card-actions justify-end">
+            <a href="{{ url }}" class="btn btn-primary btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      {{ /collection:posts }}
+    </div>
+  </div>
+</section>

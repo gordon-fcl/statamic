@@ -1,0 +1,10 @@
+title: Posts
+template: post
+layout: layout
+blueprints:
+  - post
+mount: null
+dated: true
+sort_dir: desc
+taxonomies: []
+search_index: default

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui";
+@source "../views";
+@source "../../content";
+
+@theme {
+  --color-primary: #1a3e52;
+  --color-secondary: #a7a9a7;
+  --color-accent: #2c5f7a;
+  --color-neutral: #2d3748;
+}

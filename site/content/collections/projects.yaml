@@ -1,0 +1,10 @@
+title: Projects
+template: project
+layout: layout
+blueprints:
+  - project
+mount: null
+dated: false
+sort_dir: asc
+taxonomies: []
+search_index: default

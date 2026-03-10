@@ -1,0 +1,62 @@
+<div class="hero bg-primary py-24">
+  <div class="hero-content text-center">
+    <div class="max-w-md">
+      <h1 class="text-4xl font-bold text-primary-content">{{ title }}</h1>
+      <p class="py-6 text-primary-content/80">Ready to start your project?</p>
+    </div>
+  </div>
+</div>
+
+<section class="py-16">
+  <div class="container mx-auto px-4 max-w-2xl">
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body">
+        <form method="POST" action="/contact">
+          <div class="form-control mb-4">
+            <label class="label">
+              <span class="label-text">Name</span>
+            </label>
+            <input type="text" name="name" class="input input-bordered" required>
+          </div>
+          
+          <div class="form-control mb-4">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input type="email" name="email" class="input input-bordered" required>
+          </div>
+          
+          <div class="form-control mb-4">
+            <label class="label">
+              <span class="label-text">Company</span>
+            </label>
+            <input type="text" name="company" class="input input-bordered">
+          </div>
+          
+          <div class="form-control mb-4">
+            <label class="label">
+              <span class="label-text">Service Interest</span>
+            </label>
+            <select name="service" class="select select-bordered">
+              <option>Strategy Consulting</option>
+              <option>Digital Transformation</option>
+              <option>Process Optimization</option>
+              <option>Other</option>
+            </select>
+          </div>
+          
+          <div class="form-control mb-6">
+            <label class="label">
+              <span class="label-text">Message</span>
+            </label>
+            <textarea name="message" class="textarea textarea-bordered h-24" required></textarea>
+          </div>
+          
+          <div class="form-control">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

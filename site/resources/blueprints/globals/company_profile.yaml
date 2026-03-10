@@ -1,0 +1,62 @@
+title: Company Profile
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: Company Stats
+        fields:
+          -
+            handle: years_experience
+            field:
+              type: integer
+              display: Years of Experience
+              default: 20
+              instructions: Number of years in business
+          -
+            handle: systems_delivered
+            field:
+              type: integer
+              display: Systems Delivered
+              default: 50
+              instructions: Total number of systems delivered
+          -
+            handle: acquisitions
+            field:
+              type: integer
+              display: Acquisitions
+              default: 1
+              instructions: Number of company acquisitions
+          -
+            handle: ex_cto_status
+            field:
+              type: toggle
+              display: Ex-CTO Status
+              default: true
+              instructions: Former CTO status
+      -
+        display: Company Information
+        fields:
+          -
+            handle: company_name
+            field:
+              type: text
+              display: Company Name
+              default: Farington Consultancy
+          -
+            handle: tagline
+            field:
+              type: text
+              display: Tagline
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Company Description
+          -
+            handle: logo
+            field:
+              type: assets
+              display: Company Logo
+              max_files: 1
+              container: assets

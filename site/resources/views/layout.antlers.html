@@ -7,13 +7,11 @@
         <title>{{ title ?? site:name }}</title>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
-    <body>
+    <body class="antialiased">
         {{ partial:navigation }}
-        {{ partial:stability-bar }}
         <main>
             {{ template_content }}
         </main>
-        {{ partial:safe-hands }}
         {{ partial:footer }}
     </body>
 </html>

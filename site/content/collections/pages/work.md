@@ -2,7 +2,7 @@
 id: work
 blueprint: page
 title: Work
-template: page
+template: work/index
 hero_title: Our Work
 hero_subtitle: Case studies and project highlights from 50+ delivered systems
 updated_by: 1

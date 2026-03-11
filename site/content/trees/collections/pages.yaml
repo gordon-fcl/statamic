@@ -1,3 +1,13 @@
 tree:
   -
     entry: home
+  -
+    entry: about
+  -
+    entry: services
+  -
+    entry: work
+  -
+    entry: insights
+  -
+    entry: contact

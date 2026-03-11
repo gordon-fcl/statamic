@@ -6,6 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }}</title>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
+        
+        {{# Umami Analytics - Self-hosted #}}
+        {{# Set UMAMI_SCRIPT_URL and UMAMI_WEBSITE_ID in .env #}}
+        {{ if {env:UMAMI_WEBSITE_ID} }}
+        <script defer src="{{ env:UMAMI_SCRIPT_URL }}" data-website-id="{{ env:UMAMI_WEBSITE_ID }}"></script>
+        {{ /if }}
     </head>
     <body class="antialiased">
         {{ partial:navigation }}

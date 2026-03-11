@@ -8,29 +8,31 @@ updated_at: 1710000000
 excerpt: "When job titles don't match actual responsibilities, everyone loses. Here's how misaligned roles damage productivity, ROI, and what you can do about it."
 ---
 
-## The Problem Nobody Talks About
+## The Problem Most Teams Ignore
 
 You hire a Senior Developer expecting architectural decisions and mentorship. Instead, they're writing CRUD endpoints. Your Junior Developer is drowning in production incidents they're not equipped to handle. Your contractor is being asked to make strategic technology choices that will outlive their three-month engagement.
 
 Sound familiar?
 
-The mismatch between job specifications and actual responsibilities is one of the most common - and most expensive - problems in software teams. Yet it's rarely discussed openly.
+The mismatch between job specifications and actual responsibilities is one of the most common - and most expensive - problems in software teams. Despite being widely experienced, organisations rarely address it systematically.
 
 ## The Senior Developer Paradox
 
 **What the job spec says:**
-
 - Lead technical architecture decisions
 - Mentor junior team members
 - Drive best practices and code quality
 - Collaborate with stakeholders on technical strategy
 
 **What they actually do:**
-
 - Write tickets assigned by a project manager
 - Attend meetings where their input isn't sought
 - Fix bugs in legacy code with no time for refactoring
 - Work in isolation with no one to mentor
+
+The problem isn't that senior developers write code - that's often valuable. The problem is when they lack influence over architecture, cannot shape technical direction, and are overloaded with work that doesn't use their expertise.
+
+I once worked with a senior developer who had no time to code or make senior-level decisions because they were constantly handholding an underperforming junior hire who wasn't up to the job. A complete timesink. The senior's expertise was wasted on remedial mentoring that should never have been necessary, while critical architectural decisions went unmade.
 
 The result? Your expensive senior hire becomes frustrated and disengaged. They're not using the skills you're paying for. Within six months, they're interviewing elsewhere.
 
@@ -66,22 +68,23 @@ The result? Your junior developer either burns out from stress or develops bad h
 - Provide specialist expertise for a fixed period
 
 **What they actually do:**
-
 - Make framework choices that will affect the codebase for years
 - Design database schemas with no knowledge of future requirements
 - Implement patterns that permanent staff don't understand
 - Leave before anyone realises the technical debt they've created
 
+The problem here isn't the contractor - it's the structural risk. When organisations lack clear architecture ownership, proper onboarding, or adequate documentation, contractors are forced to make decisions they shouldn't be making. Under delivery pressure, they optimise for speed because that's what they're measured on.
+
 The result? You get short-term delivery at the cost of long-term maintainability. Your permanent team inherits code they can't modify without breaking things.
 
 **The cost:** The "cheap" contractor who delivers quickly but leaves behind unmaintainable code can cost you 3-5x their day rate in remediation work over the following year.
 
-## How This Destroys Productivity
+## How Role Confusion Kills Productivity
 
 When roles don't match responsibilities, several things happen:
 
 **1. Context switching becomes constant**
-Your senior developer spends their day jumping between mentoring, bug fixes, meetings, and feature work. None of it gets their full attention. Productivity drops by 40% or more.
+Your senior developer spends their day jumping between mentoring, bug fixes, meetings, and feature work. None of it gets their full attention. In my experience, even modest productivity losses quickly compound.
 
 **2. Decision-making slows to a crawl**
 No one knows who should make which decisions. Every choice requires a meeting. Simple changes take weeks.
@@ -94,25 +97,24 @@ When people are doing work outside their role, they don't document it properly. 
 
 ## The ROI Impact
 
-Let's put numbers on this:
+Let's put numbers on this. These are estimates based on my experience, but they illustrate how quickly costs accumulate:
 
 **Scenario: 5-person development team with misaligned roles**
 
-- Senior Developer (£70k): 40% productivity loss = £28k wasted annually
-- Two Mid-level Developers (£50k each): 25% productivity loss = £25k wasted annually
-- Junior Developer (£35k): 50% productivity loss = £17.5k wasted annually
-- Contractor (£500/day, 100 days): 30% rework = £15k wasted
+- Senior Developer (£70k): Even a modest productivity loss = £20k+ wasted annually
+- Two Mid-level Developers (£50k each): Similar impact = £20k+ wasted annually
+- Junior Developer (£35k): Struggling without support = £15k+ wasted annually
+- Contractor (£500/day, 100 days): Rework and remediation = £15k+ wasted
 
-**Total annual waste: £85,500**
+**Conservative estimate: £70k+ annual waste**
 
 That's before you factor in:
-
 - Recruitment costs from turnover
 - Technical debt remediation
 - Missed deadlines and lost opportunities
 - Team morale and engagement
 
-For a small team, you're potentially losing £100k+ annually to role misalignment. For larger organisations, multiply that by the number of teams.
+For a small team, you're potentially losing tens of thousands annually to role misalignment. For larger organisations, multiply that by the number of teams.
 
 ## What Can Be Done
 
@@ -170,8 +172,8 @@ The solution isn't complicated: match responsibilities to roles, provide appropr
 
 Your team will be more productive. Your ROI will improve. Your people will stay longer.
 
-And you'll stop haemorrhaging £100k+ annually on a problem you didn't know you had.
+And you'll stop haemorrhaging tens of thousands annually on a problem you didn't know you had.
 
 ---
 
-**Need help auditing your team structure or defining clear roles?** I've spent fifteen years building and leading engineering teams, including as CTO through a successful acquisition. I can help you identify misalignments and create a structure that actually works. [Get in touch](/contact).
+If this sounds familiar, you're not alone. Many teams drift into role mismatches without noticing. Part of my work with companies is helping them audit these structures and create clarity around who does what. I've spent fifteen years building and leading engineering teams, including as CTO through a successful acquisition. If you'd like help identifying misalignments and creating a structure that actually works, [get in touch](/contact).

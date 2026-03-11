@@ -23,6 +23,43 @@ services:
     networks:
       - web-stack
 
+  umami:
+    image: ghcr.io/umami-software/umami:postgresql-latest
+    container_name: umami
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://umami:umami@umami-db:5432/umami
+      DATABASE_TYPE: postgresql
+      APP_SECRET: ${UMAMI_APP_SECRET:-replace-me-with-random-string}
+    depends_on:
+      umami-db:
+        condition: service_healthy
+    networks:
+      - web-stack
+
+  umami-db:
+    image: postgres:15-alpine
+    container_name: umami_db
+    restart: always
+    environment:
+      POSTGRES_DB: umami
+      POSTGRES_USER: umami
+      POSTGRES_PASSWORD: umami
+    volumes:
+      - umami-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U umami"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - web-stack
+
 networks:
   web-stack:
     external: true
+
+volumes:
+  umami-db-data:

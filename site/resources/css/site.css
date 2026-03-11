@@ -7,6 +7,14 @@
 /* Fonts - Sophisticated sans-serif pairing */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
+/* Theme: Glassmorphism (default) */
+:root {
+  --theme-primary: #1a3e52;
+  --theme-secondary: #a7a9a7;
+  --theme-accent: #2c5f7a;
+  --theme-neutral: #2d3748;
+}
+
 @theme {
   --color-primary: #1a3e52;
   --color-secondary: #a7a9a7;
@@ -69,3 +77,24 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+/* Alternative Theme: Minimal (commented out - uncomment to activate) */
+/*
+:root {
+  --theme-primary: #000000;
+  --theme-secondary: #666666;
+  --theme-accent: #333333;
+  --theme-neutral: #999999;
+}
+
+.glass, .glass-dark {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: none;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-primary {
+  background: #000000;
+}
+*/

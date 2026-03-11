@@ -3,6 +3,7 @@ title: "MedAscend: From MVP to Enterprise-Ready Infrastructure"
 id: medascend
 blueprint: project
 client_sector: Healthcare
+client_logo: /assets/clients/medascend/logo.svg
 tech_stack:
   - Multi-tenancy
   - RBAC

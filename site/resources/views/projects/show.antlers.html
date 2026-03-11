@@ -3,6 +3,11 @@
   <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     {{# Header #}}
     <div class="mb-12">
+      {{ if client_logo }}
+      <div class="mb-6">
+        <img src="{{ client_logo }}" alt="{{ title }}" class="h-12 w-auto">
+      </div>
+      {{ /if }}
       <div class="flex items-center gap-4 mb-4">
         <span class="text-sm font-medium text-[#2c5f7a]">{{ client_sector }}</span>
         <span class="text-sm text-gray-500">{{ project_role }}</span>

@@ -1,0 +1,23 @@
+<section class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <header class="mb-16">
+      <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Insights</h1>
+      <p class="text-xl text-gray-600 max-w-3xl">Technology insights and industry perspectives from fifteen years of battle-tested experience.</p>
+    </header>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      {{ collection:blog }}
+      <article class="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-shadow">
+        <time class="text-gray-500 text-sm">{{ date format="F j, Y" }}</time>
+        <h2 class="text-2xl font-bold text-gray-900 mt-4 mb-4">
+          <a href="{{ url }}" class="hover:text-gray-700 transition-colors">{{ title }}</a>
+        </h2>
+        {{ if excerpt }}
+        <p class="text-gray-600 mb-4">{{ excerpt }}</p>
+        {{ /if }}
+        <a href="{{ url }}" class="text-gray-900 font-semibold hover:underline">Read more →</a>
+      </article>
+      {{ /collection:blog }}
+    </div>
+  </div>
+</section>

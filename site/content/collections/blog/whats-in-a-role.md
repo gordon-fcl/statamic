@@ -1,14 +1,12 @@
 ---
+id: e10bcf2f-127e-4556-bb33-c4fb1567f924
+blueprint: blog_post
 title: "What's in a Role? The Hidden Cost of Job Title Mismatches"
-id: whats-in-a-role
-blueprint: page
-template: page
-published: true
+date: 1773187200
 updated_by: 1
 updated_at: 1710000000
 excerpt: "When job titles don't match actual responsibilities, everyone loses. Here's how misaligned roles damage productivity, ROI, and what you can do about it."
 ---
-
 ## The Problem Nobody Talks About
 
 You hire a Senior Developer expecting architectural decisions and mentorship. Instead, they're writing CRUD endpoints. Your Junior Developer is drowning in production incidents they're not equipped to handle. Your contractor is being asked to make strategic technology choices that will outlive their three-month engagement.

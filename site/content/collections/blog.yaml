@@ -1,0 +1,11 @@
+title: Blog Posts
+route: /blog/{slug}
+template: blog/show
+layout: layout
+blueprints:
+  - blog_post
+sort_dir: desc
+sort_by: date
+date_behavior:
+  past: public
+  future: private

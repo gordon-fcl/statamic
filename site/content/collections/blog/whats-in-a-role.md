@@ -7,23 +7,26 @@ updated_by: 1
 updated_at: 1710000000
 excerpt: "When job titles don't match actual responsibilities, everyone loses. Here's how misaligned roles damage productivity, ROI, and what you can do about it."
 ---
+
 ## The Problem Nobody Talks About
 
 You hire a Senior Developer expecting architectural decisions and mentorship. Instead, they're writing CRUD endpoints. Your Junior Developer is drowning in production incidents they're not equipped to handle. Your contractor is being asked to make strategic technology choices that will outlive their three-month engagement.
 
 Sound familiar?
 
-The mismatch between job specifications and actual responsibilities is one of the most common—and most expensive—problems in software teams. Yet it's rarely discussed openly.
+The mismatch between job specifications and actual responsibilities is one of the most common - and most expensive - problems in software teams. Yet it's rarely discussed openly.
 
 ## The Senior Developer Paradox
 
 **What the job spec says:**
+
 - Lead technical architecture decisions
 - Mentor junior team members
 - Drive best practices and code quality
 - Collaborate with stakeholders on technical strategy
 
 **What they actually do:**
+
 - Write tickets assigned by a project manager
 - Attend meetings where their input isn't sought
 - Fix bugs in legacy code with no time for refactoring
@@ -36,12 +39,14 @@ The result? Your expensive senior hire becomes frustrated and disengaged. They'r
 ## The Junior Developer Trap
 
 **What the job spec says:**
+
 - Learn from experienced team members
 - Work on well-defined tasks with clear requirements
 - Gradually take on more responsibility
 - Receive regular code reviews and feedback
 
 **What they actually do:**
+
 - Debug production issues alone at 11pm
 - Implement features with vague requirements and no guidance
 - Make architectural decisions because no one else is available
@@ -49,17 +54,19 @@ The result? Your expensive senior hire becomes frustrated and disengaged. They'r
 
 The result? Your junior developer either burns out from stress or develops bad habits that become technical debt. Either way, you're not getting the ROI you expected from an affordable hire.
 
-**The cost:** A junior developer who takes twice as long to deliver features and creates technical debt that requires senior time to fix isn't saving you money—they're costing you more than a mid-level hire would have.
+**The cost:** A junior developer who takes twice as long to deliver features and creates technical debt that requires senior time to fix isn't saving you money - they're costing you more than a mid-level hire would have.
 
 ## The Contractor Conundrum
 
 **What the contract says:**
+
 - Deliver specific features within a defined timeframe
 - Work within existing architectural patterns
 - Document work for handover
 - Provide specialist expertise for a fixed period
 
 **What they actually do:**
+
 - Make framework choices that will affect the codebase for years
 - Design database schemas with no knowledge of future requirements
 - Implement patterns that permanent staff don't understand
@@ -99,6 +106,7 @@ Let's put numbers on this:
 **Total annual waste: £85,500**
 
 That's before you factor in:
+
 - Recruitment costs from turnover
 - Technical debt remediation
 - Missed deadlines and lost opportunities
@@ -117,10 +125,11 @@ Write job specs that reflect what people will actually do, not what you wish the
 ### 2. Create Clear Decision-Making Frameworks
 
 Document who makes which types of decisions:
+
 - Juniors: Implementation details within defined patterns
 - Mid-level: Technical approach for features
 - Seniors: Architectural patterns and technology choices
-- Contractors: Nothing that outlives their contract
+- Contractors: Clearly defined specifications with acceptance criteria that actually encapsulate desired outcomes
 
 ### 3. Match Seniority to Responsibility
 
@@ -131,27 +140,31 @@ If you need someone to make strategic decisions, hire (and pay for) a senior. If
 - Juniors need mentoring, code reviews, and clear requirements
 - Mid-level developers need architectural guidance and context
 - Seniors need autonomy and strategic input opportunities
-- Contractors need clear boundaries and handover plans
+- Contractors need clear boundaries and handover plans, open lines of communication to key personnel
 
 ### 5. Regular Role Audits
 
 Every quarter, ask:
+
 - Is each person doing work appropriate to their role?
 - Are responsibilities clearly defined and understood?
 - Are we paying for skills we're not using?
 - Are we asking people to do work they're not equipped for?
+- Are we communicating specifications, requirements, and what "done" looks like clearly?
 
 ### 6. Fix Mismatches Quickly
 
 When you spot a mismatch, address it immediately:
+
 - Redistribute work to appropriate levels
 - Adjust job titles and compensation if needed
 - Provide training or support where gaps exist
 - Be honest if someone is in the wrong role
+- Work hard to communicate promptly and clearly
 
 ## The Bottom Line
 
-Role misalignment isn't just an HR problem—it's a business problem. It destroys productivity, wastes money, and drives away good people.
+Role misalignment isn't just an HR problem - it's a business problem. It destroys productivity, wastes money, and drives away good people.
 
 The solution isn't complicated: match responsibilities to roles, provide appropriate support, and be honest about what each position actually entails.
 

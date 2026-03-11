@@ -13,45 +13,32 @@ tabs:
               validate:
                 - required
           -
-            handle: slug
-            field:
-              type: slug
-              required: true
-              from: title
-          -
-            handle: description
+            handle: excerpt
             field:
               type: textarea
-              display: Description
-              instructions: Brief project description
+              display: Excerpt
+              instructions: Brief project summary
           -
-            handle: client
+            handle: client_sector
             field:
-              type: text
-              display: Client
+              type: select
+              display: Client Sector
+              options:
+                finance: Finance
+                manufacturing: Manufacturing
+                healthcare: Healthcare
+                education: Higher Education
+                public: Public Sector
           -
-            handle: project_url
-            field:
-              type: url
-              display: Project URL
-          -
-            handle: featured_image
-            field:
-              type: assets
-              display: Featured Image
-              max_files: 1
-              container: assets
-          -
-            handle: gallery
-            field:
-              type: assets
-              display: Gallery
-              container: assets
-          -
-            handle: technologies
+            handle: tech_stack
             field:
               type: tags
-              display: Technologies
+              display: Tech Stack
+          -
+            handle: project_role
+            field:
+              type: text
+              display: Project Role
           -
             handle: content
             field:

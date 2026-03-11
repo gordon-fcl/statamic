@@ -15,7 +15,7 @@ Stay informed with our latest thoughts on technology trends, best practices, and
 
 ## Industry Perspectives
 
-Drawing from 15+ years of experience and Ex-CTO background, we share insights on technology leadership, team building, and strategic decision-making.
+Drawing from fifteen years of battle-tested experience and a former CTO background, we share insights on technology leadership, team building, and strategic decision-making.
 
 ## Best Practices
 

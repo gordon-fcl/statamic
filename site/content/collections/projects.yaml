@@ -1,9 +1,9 @@
 title: Projects
-template: project
+template: projects/show
 layout: layout
 blueprints:
   - project
-mount: null
+route: /work/{slug}
 dated: false
 sort_dir: asc
 taxonomies: []

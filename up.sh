@@ -35,7 +35,7 @@ podman run -d \
 
 echo "--- 4. Running Application Tasks ---"
 # Install PHP dependencies
-podman exec statamic_app composer install --no-interaction --optimize-autoloader
+podman exec statamic_app composer install --no-dev --no-interaction --optimize-autoloader
 
 # Compile Frontend Assets (Vite/Tailwind)
 podman exec statamic_app npm install

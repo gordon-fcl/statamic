@@ -1,3 +1,7 @@
 super: true
 id: a737e56f-c6b2-47c3-a0b2-7ff1ceca293f
 password_hash: $2y$12$nI4vQ0DJCob5PlkksN3OE.8nAwWRPYFfdT8TbFHH3wtTSIxYxiku2
+preferences:
+  collections:
+    blog:
+      view: list

@@ -29,7 +29,7 @@ I worked with a senior developer who had no time for any of this. They spent the
 
 Expensive senior hires become frustrated and disengaged when they're not using the skills you're paying for. Within six months, they're interviewing elsewhere.
 
-A senior developer earning £70k who leaves after six months costs roughly £100k when you factor in recruitment, onboarding, and lost productivity. Actually, the KPMG and REC UK Report on Jobs (2026) suggests recruitment inflation and turnover costs are surging. Industry standards indicate a "bad hire" or mismatch leading to early turnover costs roughly 3x the annual salary (£210k) when factoring in recruitment fees, onboarding, and lost velocity.
+A senior developer earning £70k who leaves after six months costs roughly £100k when you factor in recruitment, onboarding, and lost productivity. Actually, [recruitment inflation and turnover costs are surging](https://www.michaelpage.co.uk/news/media-releases/talent-trends-engineering-manufacturing-press-release-study?hl=en-GB). Industry standards indicate a "bad hire" or mismatch leading to early turnover costs roughly 3x the annual salary (£210k) when factoring in recruitment fees, onboarding, and lost velocity.
 
 ## The Junior Developer
 
@@ -63,7 +63,7 @@ The "cheap" contractor who delivers quickly but leaves behind unmaintainable cod
 
 When roles don't match responsibilities:
 
-**Context switching becomes constant.** Senior developers spend their day jumping between mentoring, bug fixes, meetings, and feature work. None of it gets their full attention. Research from the University of California, Irvine, shows it takes an average of 23 minutes to return to deep focus after an interruption. If a senior is constantly pulled into junior tasks, their strategic output vanishes.
+**Context switching becomes constant.** Senior developers spend their day jumping between mentoring, bug fixes, meetings, and feature work. None of it gets their full attention. [Research from the University of California, Irvine](https://www.researchgate.net/publication/221518077_The_cost_of_interrupted_work_More_speed_and_stress), shows it takes an average of 23 minutes to return to deep focus after an interruption. If a senior is constantly pulled into junior tasks, their strategic output vanishes.
 
 **Decision-making slows.** No one knows who should make which decisions. Every choice requires a meeting. Simple changes take weeks.
 
@@ -75,9 +75,9 @@ When roles don't match responsibilities:
 
 These aren't just frustrations - they're line items on your balance sheet. Based on a typical 5-person UK development team:
 
-**The Senior "Drift" Cost:** A senior developer (£70k) spending 33% of their time on technical debt or junior-level work represents £23,100 in direct salary waste.
+**The Senior "Drift" Cost:** A [senior developer (£70k)](https://uk.indeed.com/career/senior-software-engineer/salaries?hl=en-GB) spending 33% of their time on technical debt or junior-level work represents £23,100 in direct salary waste.
 
-**The Technical Debt Tax:** Stripe's Developer Coefficient report found that the average developer spends 13.5 hours per week (roughly 33% of their time) solely on technical debt.
+**The Technical Debt Tax:** [Stripe's Developer Coefficient report](https://stripe.com/gb/newsroom/stories/developer-coefficient?hl=en-GB) found that the average developer spends 13.5 hours per week (roughly 33% of their time) solely on technical debt.
 
 **The Interruption Tax:** If your senior is interrupted five times a day for non-senior tasks, you lose two hours of peak productivity daily - roughly £17,500 of high-value output per year.
 

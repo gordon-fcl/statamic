@@ -1,20 +1,18 @@
 ---
-id: draft-whats-in-a-role
+id: whats-in-a-role-part-1
 blueprint: blog_post
-title: "What's in a Role? The Hidden Cost of Job Title Mismatches (ORIGINAL DRAFT)"
+title: "What's in a Role? The Hidden Cost of Job Title Mismatches"
 date: '2026-03-11 00:00'
-published: false
+published: true
 updated_by: a737e56f-c6b2-47c3-a0b2-7ff1ceca293f
 updated_at: 1773310928
-excerpt: "When job titles don't match actual responsibilities, frustration rises and all parties lose. Here's how misaligned roles damage productivity, ROI, and what can be done about it."
+excerpt: "When job titles don't match actual responsibilities, everyone loses. Here's how misaligned roles damage productivity and ROI."
 ---
 ## The Problem Is Often Simply Accepted
 
-Isn't this a common situation? You hire a Senior Developer expecting architectural decisions and mentorship. Instead of solving the big issues, they're stuck writing CRUD endpoints and wrestling with bugs. Or perhaps it's the new Junior Developer who finds themself drowning in production incidents they're not equipped to handle. Contractors aren't immune either, often being asked to make strategic technology choices that will outlive their three-month engagement.
+You hire a Senior Developer expecting architectural decisions and mentorship. Instead of solving the big issues, they're writing CRUD endpoints. Or perhaps it's the new Junior Developer who finds themself drowning in production incidents they're not equipped to handle. Contractors aren't immune either, often being asked to make strategic technology choices that will outlive their three-month engagement.
 
 The mismatch between job specifications and actual responsibilities is a common - and expensive - problem in software teams. Despite being widely experienced, organisations rarely address it systematically or plan to avoid it.
-
-Let's take a look at the issue from the perspective of a few different engineers.
 
 ## The Senior Developer
 
@@ -61,19 +59,7 @@ Short-term delivery comes at the cost of long-term maintainability. Permanent te
 
 The "cheap" contractor who delivers quickly but leaves behind unmaintainable code can cost 3-5x their day rate in remediation work over the following year.
 
-## How This Affects Productivity
-
-When roles don't match responsibilities:
-
-**Context switching becomes constant.** Senior developers spend their day jumping between mentoring, bug fixes, meetings, and feature work. None of it gets their full attention. [Research from the University of California, Irvine](https://www.researchgate.net/publication/221518077_The_cost_of_interrupted_work_More_speed_and_stress), shows it takes an average of 23 minutes to return to deep focus after an interruption. If a senior is constantly pulled into junior tasks, their strategic output vanishes.
-
-**Decision-making slows.** No one knows who should make which decisions. Every choice requires a meeting. Simple changes take weeks.
-
-**Quality suffers.** Juniors make mistakes because they lack guidance. Seniors rush work because they're overloaded. Contractors optimise for speed because they won't be around to maintain it.
-
-**Knowledge silos form.** When people do work outside their role, they don't document it properly. Critical knowledge lives in one person's head. When they leave, it's gone.
-
-## The Cost
+## The Real Cost
 
 These aren't just frustrations - they're line items on your balance sheet. Based on a typical 5-person UK development team:
 
@@ -81,67 +67,14 @@ These aren't just frustrations - they're line items on your balance sheet. Based
 
 **The Technical Debt Tax:** [Stripe's Developer Coefficient report](https://stripe.com/gb/newsroom/stories/developer-coefficient?hl=en-GB) found that the average developer spends 13.5 hours per week (roughly 33% of their time) solely on technical debt.
 
-**The Interruption Tax:** If your senior is interrupted five times a day for non-senior tasks, you lose two hours of peak productivity daily - roughly £17,500 of high-value output per year.
+**The Interruption Tax:** [Research from the University of California, Irvine](https://www.researchgate.net/publication/221518077_The_cost_of_interrupted_work_More_speed_and_stress) shows it takes an average of 23 minutes to return to deep focus after an interruption. If your senior is interrupted five times a day for non-senior tasks, you lose two hours of peak productivity daily - roughly £17,500 of high-value output per year.
 
 **Conservative estimate: £80k-£150k annual waste for a single five-person team**
 
-Before factoring in:
-- Recruitment costs from turnover
-- Technical debt remediation
-- Missed deadlines and lost opportunities
-- Team morale and engagement
-
-For larger organisations, multiply by the number of teams.
-
-## What Can Be Done
-
-### Define roles based on reality
-
-Write job specs that reflect what people will actually do. If the "Senior Developer" role is 80% feature work and 20% architecture, say that. Don't pretend it's a leadership position.
-
-### Create clear decision-making frameworks
-
-Document who makes which types of decisions:
-- Juniors: Implementation details within defined patterns
-- Mid-level: Technical approach for features
-- Seniors: Architectural patterns and technology choices
-- Contractors: Nothing that outlives their contract
-
-### Match seniority to responsibility
-
-Need someone to make strategic decisions? Hire and pay for a senior. Need feature delivery? Hire mid-level developers. Don't hire seniors and waste their expertise on junior work.
-
-### Provide appropriate support
-
-- Juniors need mentoring, code reviews, and clear requirements
-- Mid-level developers need architectural guidance and context
-- Seniors need autonomy and strategic input opportunities
-- Contractors need clear boundaries and handover plans
-
-### Regular role audits
-
-Every quarter, ask:
-- Is each person doing work appropriate to their role?
-- Are responsibilities clearly defined and understood?
-- Are we paying for skills we're not using?
-- Are we asking people to do work they're not equipped for?
-
-### Fix mismatches quickly
-
-When you spot a mismatch, address it:
-- Redistribute work to appropriate levels
-- Adjust job titles and compensation if needed
-- Provide training or support where gaps exist
-- Be honest if someone is in the wrong role
-
-## The Bottom Line
-
-Role misalignment isn't just an HR problem - it's a business problem. It destroys productivity, wastes money, and drives away good people.
-
-The solution: match responsibilities to roles, provide appropriate support, and be honest about what each position actually entails.
-
-Teams become more productive. ROI improves. People stay longer. And you stop haemorrhaging tens of thousands annually on a problem you didn't know you had.
+Before factoring in recruitment costs from turnover, technical debt remediation, missed deadlines, and team morale issues.
 
 ---
 
-If this sounds familiar, you're not alone. Many teams drift into role mismatches without noticing. Part of my work with companies is helping them audit these structures and create clarity around who does what. I've spent fifteen years building and leading engineering teams, including as CTO through a successful acquisition. If you'd like help identifying misalignments and creating a structure that actually works, [get in touch](/contact).
+**In part two**, I'll cover practical solutions for fixing role misalignment and preventing these costly mismatches. [Read part two](/blog/whats-in-a-role-part-2).
+
+If this sounds familiar and you'd like help auditing your team structure, I've spent fifteen years building and leading engineering teams, including as CTO through a successful acquisition. [Get in touch](/contact).

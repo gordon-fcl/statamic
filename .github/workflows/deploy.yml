@@ -40,4 +40,4 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd $(dirname ${{ secrets.VPS_PATH }})
-            ./deploy.sh
+            ./up.sh

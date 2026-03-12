@@ -4,12 +4,12 @@ blueprint: blog_post
 title: "What's in a Role? The Hidden Cost of Job Title Mismatches"
 date: '2026-03-11 00:00'
 updated_by: a737e56f-c6b2-47c3-a0b2-7ff1ceca293f
-updated_at: 1773308330
-excerpt: "When job titles don't match actual responsibilities, everyone loses. Here's how misaligned roles damage productivity, ROI, and what can be done about it."
+updated_at: 1773310928
+excerpt: "When job titles don't match actual responsibilities, frustration rises and all parties lose. Here's how misaligned roles damage productivity, ROI, and what can be done about it."
 ---
 ## The Problem Is Often Simply Accepted
 
-You hire a Senior Developer expecting architectural decisions and mentorship. Instead of solving the big issues, they're writing CRUD endpoints. Or perhaps it's the new Junior Developer who finds themself drowning in production incidents they're not equipped to handle. Contractors aren't immune either, often being asked to make strategic technology choices that will outlive their three-month engagement.
+Isn't this a common situation? You hire a Senior Developer expecting architectural decisions and mentorship. Instead of solving the big issues, they're stuck writing CRUD endpoints and wrestling with bugs. Or perhaps it's the new Junior Developer who finds themself drowning in production incidents they're not equipped to handle. Contractors aren't immune either, often being asked to make strategic technology choices that will outlive their three-month engagement.
 
 The mismatch between job specifications and actual responsibilities is a common - and expensive - problem in software teams. Despite being widely experienced, organisations rarely address it systematically or plan to avoid it.
 

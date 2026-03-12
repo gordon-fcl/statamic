@@ -29,7 +29,7 @@ I worked with a senior developer who had no time for any of this. They spent the
 
 Expensive senior hires become frustrated and disengaged when they're not using the skills you're paying for. Within six months, they're interviewing elsewhere.
 
-A senior developer earning £70k who leaves after six months costs roughly £100k when you factor in recruitment, onboarding, and lost productivity. Then the cycle starts again.
+A senior developer earning £70k who leaves after six months costs roughly £100k when you factor in recruitment, onboarding, and lost productivity. Actually, the KPMG and REC UK Report on Jobs (2026) suggests recruitment inflation and turnover costs are surging. Industry standards indicate a "bad hire" or mismatch leading to early turnover costs roughly 3x the annual salary (£210k) when factoring in recruitment fees, onboarding, and lost velocity.
 
 ## The Junior Developer
 
@@ -63,7 +63,7 @@ The "cheap" contractor who delivers quickly but leaves behind unmaintainable cod
 
 When roles don't match responsibilities:
 
-**Context switching becomes constant.** Senior developers spend their day jumping between mentoring, bug fixes, meetings, and feature work. None of it gets their full attention. Even modest productivity losses compound quickly.
+**Context switching becomes constant.** Senior developers spend their day jumping between mentoring, bug fixes, meetings, and feature work. None of it gets their full attention. Research from the University of California, Irvine, shows it takes an average of 23 minutes to return to deep focus after an interruption. If a senior is constantly pulled into junior tasks, their strategic output vanishes.
 
 **Decision-making slows.** No one knows who should make which decisions. Every choice requires a meeting. Simple changes take weeks.
 
@@ -73,16 +73,15 @@ When roles don't match responsibilities:
 
 ## The Cost
 
-These are estimates based on experience, but they illustrate how quickly costs accumulate:
+These aren't just frustrations - they're line items on your balance sheet. Based on a typical 5-person UK development team:
 
-**5-person development team with misaligned roles:**
+**The Senior "Drift" Cost:** A senior developer (£70k) spending 33% of their time on technical debt or junior-level work represents £23,100 in direct salary waste.
 
-- Senior Developer (£70k): Even modest productivity loss = £20k+ wasted annually
-- Two Mid-level Developers (£50k each): Similar impact = £20k+ wasted annually
-- Junior Developer (£35k): Struggling without support = £15k+ wasted annually
-- Contractor (£500/day, 100 days): Rework and remediation = £15k+ wasted
+**The Technical Debt Tax:** Stripe's Developer Coefficient report found that the average developer spends 13.5 hours per week (roughly 33% of their time) solely on technical debt.
 
-**Conservative estimate: £70k+ annual waste**
+**The Interruption Tax:** If your senior is interrupted five times a day for non-senior tasks, you lose two hours of peak productivity daily - roughly £17,500 of high-value output per year.
+
+**Conservative estimate: £80k-£150k annual waste for a single five-person team**
 
 Before factoring in:
 - Recruitment costs from turnover
@@ -90,7 +89,7 @@ Before factoring in:
 - Missed deadlines and lost opportunities
 - Team morale and engagement
 
-For a small team, tens of thousands lost annually to role misalignment. For larger organisations, multiply by the number of teams.
+For larger organisations, multiply by the number of teams.
 
 ## What Can Be Done
 

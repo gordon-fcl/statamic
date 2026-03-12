@@ -21,6 +21,16 @@ jobs:
             echo "SSH connection successful"
             ls -la ${{ secrets.VPS_PATH }}
       
+      - name: Fix VPS permissions
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd $(dirname ${{ secrets.VPS_PATH }})
+            podman unshare chown -R 1000:1000 ./site
+      
       - name: Deploy to VPS
         run: |
           mkdir -p ~/.ssh

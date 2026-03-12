@@ -40,5 +40,6 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd ${{ secrets.VPS_PATH }}
+            podman exec ${{ secrets.CONTAINER_NAME }} composer install --no-dev --optimize-autoloader
             podman exec ${{ secrets.CONTAINER_NAME }} php please stache:clear
             podman exec ${{ secrets.CONTAINER_NAME }} php please cache:clear

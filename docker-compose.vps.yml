@@ -4,6 +4,7 @@ services:
   statamic-app:
     build: .
     container_name: statamic_app
+    user: "1000:1000"
     restart: unless-stopped
     volumes:
       - ./site:/var/www/html:Z

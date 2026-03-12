@@ -8,7 +8,7 @@
     </a>
     
     <header class="mb-12">
-      <time class="text-gray-500 text-sm">{{ date format="F j, Y" }}</time>
+      <time class="text-gray-500 text-sm">{{ date format="F j, Y" }} • {{ content | read_time }} min read</time>
       <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mt-4 mb-6">{{ title }}</h1>
       {{ if excerpt }}
       <p class="text-xl text-gray-600 leading-relaxed">{{ excerpt }}</p>

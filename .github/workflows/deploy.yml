@@ -20,6 +20,8 @@ jobs:
           source: "site/*"
           target: ${{ secrets.VPS_PATH }}
           strip_components: 1
+          rm: true
+          excludes: ".env,.env.*,node_modules/*,vendor/*,storage/framework/cache/*"
       
       - name: Clear Statamic cache
         uses: appleboy/ssh-action@v1.0.3

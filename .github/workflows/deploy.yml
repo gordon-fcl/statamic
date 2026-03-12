@@ -22,15 +22,23 @@ jobs:
             ls -la ${{ secrets.VPS_PATH }}
       
       - name: Deploy to VPS
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          source: "site/*,!site/.composer,!site/.ash_history,!site/vendor,!site/node_modules,!site/storage/framework/cache,!site/storage/logs"
-          target: ${{ secrets.VPS_PATH }}
-          strip_components: 1
-          overwrite: true
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+            --exclude='.env' \
+            --exclude='.composer/' \
+            --exclude='.ash_history' \
+            --exclude='vendor/' \
+            --exclude='node_modules/' \
+            --exclude='storage/framework/cache/' \
+            --exclude='storage/logs/' \
+            --exclude='.npm/' \
+            ./site/ \
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:${{ secrets.VPS_PATH }}/
+          rm ~/.ssh/deploy_key
       
       - name: Deploy and restart containers
         uses: appleboy/ssh-action@v1.0.3

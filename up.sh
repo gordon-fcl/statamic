@@ -8,9 +8,6 @@ echo "--- 1. Breaking Namespace Deadlocks ---"
 # to give the files back to your host user (1000).
 podman unshare chown -R 1000:1000 ./site
 
-# Now that you definitely own them, set the permissions
-chmod -R u+rwX ./site
-
 echo "--- 2. Building Statamic Image ---"
 podman build --pull -t statamic-local .
 

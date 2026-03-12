@@ -27,7 +27,7 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          source: "site/*"
+          source: "site/*,!site/.composer,!site/.ash_history,!site/vendor,!site/node_modules,!site/storage/framework/cache,!site/storage/logs"
           target: ${{ secrets.VPS_PATH }}
           strip_components: 1
           overwrite: true

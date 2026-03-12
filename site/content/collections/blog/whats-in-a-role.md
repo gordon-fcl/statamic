@@ -18,21 +18,16 @@ The mismatch between job specifications and actual responsibilities is one of th
 
 ## The Senior Developer Paradox
 
-**What the job spec says:**
-- Lead technical architecture decisions
-- Mentor junior team members
-- Drive best practices and code quality
-- Collaborate with stakeholders on technical strategy
+| What the job spec says | What they actually do |
+|------------------------|----------------------|
+| Lead technical architecture decisions | Write tickets assigned by a project manager |
+| Mentor junior team members | Attend meetings where their input isn't sought |
+| Drive best practices and code quality | Fix bugs in legacy code with no time for refactoring |
+| Collaborate with stakeholders on technical strategy | Work in isolation with no one to mentor |
 
-**What they actually do:**
-- Write tickets assigned by a project manager
-- Attend meetings where their input isn't sought
-- Fix bugs in legacy code with no time for refactoring
-- Work in isolation with no one to mentor
+The problem isn't that senior developers write code - that's often valuable. Senior developers should be tackling the hardest 5% of problems: proof-of-concepts for new architecture, solving complex performance issues, or establishing patterns for the team to follow. The problem is when they're stuck writing straightforward CRUD endpoints while lacking influence over architecture and technical direction.
 
-The problem isn't that senior developers write code - that's often valuable. The problem is when they lack influence over architecture, cannot shape technical direction, and are overloaded with work that doesn't use their expertise.
-
-I once worked with a senior developer who had no time to code or make senior-level decisions because they were constantly handholding an underperforming junior hire who wasn't up to the job. A complete timesink. The senior's expertise was wasted on remedial mentoring that should never have been necessary, while critical architectural decisions went unmade.
+I once worked with a senior developer who had no time to do any of this because they were constantly handholding a junior hire who wasn't up to the job. A complete timesink. The senior's expertise was wasted on remedial mentoring, while critical architectural decisions went unmade. The junior wasn't at fault - they'd been hired into a role they weren't ready for, a systemic failure that hurt everyone involved.
 
 The result? Your expensive senior hire becomes frustrated and disengaged. They're not using the skills you're paying for. Within six months, they're interviewing elsewhere.
 
@@ -40,14 +35,12 @@ The result? Your expensive senior hire becomes frustrated and disengaged. They'r
 
 ## The Junior Developer Trap
 
-**What the job spec says:**
-
-- Learn from experienced team members
-- Work on well-defined tasks with clear requirements
-- Gradually take on more responsibility
-- Receive regular code reviews and feedback
-
-**What they actually do:**
+| What the job spec says | What they actually do |
+|------------------------|----------------------|
+| Learn from experienced team members | Debug production issues alone at 11pm |
+| Work on well-defined tasks with clear requirements | Implement features with vague requirements and no guidance |
+| Gradually take on more responsibility | Make architectural decisions because no one else is available |
+| Receive regular code reviews and feedback | Learn by trial and error (mostly error) |
 
 - Debug production issues alone at 11pm
 - Implement features with vague requirements and no guidance
@@ -60,18 +53,12 @@ The result? Your junior developer either burns out from stress or develops bad h
 
 ## The Contractor Conundrum
 
-**What the contract says:**
-
-- Deliver specific features within a defined timeframe
-- Work within existing architectural patterns
-- Document work for handover
-- Provide specialist expertise for a fixed period
-
-**What they actually do:**
-- Make framework choices that will affect the codebase for years
-- Design database schemas with no knowledge of future requirements
-- Implement patterns that permanent staff don't understand
-- Leave before anyone realises the technical debt they've created
+| What the contract says | What they actually do |
+|------------------------|----------------------|
+| Deliver specific features within a defined timeframe | Make framework choices that will affect the codebase for years |
+| Work within existing architectural patterns | Design database schemas with no knowledge of future requirements |
+| Document work for handover | Implement patterns that permanent staff don't understand |
+| Provide specialist expertise for a fixed period | Leave before anyone realises the technical debt they've created |
 
 The problem here isn't the contractor - it's the structural risk. When organisations lack clear architecture ownership, proper onboarding, or adequate documentation, contractors are forced to make decisions they shouldn't be making. Under delivery pressure, they optimise for speed because that's what they're measured on.
 

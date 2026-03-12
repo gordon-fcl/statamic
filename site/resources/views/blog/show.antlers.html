@@ -20,3 +20,13 @@
     </div>
   </div>
 </article>
+
+<script>
+  // Open external links in new tab
+  document.querySelectorAll('article a[href^="http"]').forEach(link => {
+    if (!link.href.includes(window.location.hostname)) {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+  });
+</script>

@@ -3,13 +3,16 @@
 # Exit on any error
 set -e
 
-echo "--- 1. Building Statamic Image ---"
-podman build --pull -t statamic-local .
-
-echo "--- 2. Resetting Permissions ---"
-# Reclaim host ownership so the CI runner can modify files
+echo "--- 1. Breaking Namespace Deadlocks ---"
+# This is the 'Master Key'. It lets you act as the container root 
+# to give the files back to your host user (1000).
 podman unshare chown -R 1000:1000 ./site
+
+# Now that you definitely own them, set the permissions
 chmod -R u+rwX ./site
+
+echo "--- 2. Building Statamic Image ---"
+podman build --pull -t statamic-local .
 
 echo "--- 3. Deploying Containers ---"
 # Start PHP-FPM

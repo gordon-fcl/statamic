@@ -3,6 +3,7 @@ id: e10bcf2f-127e-4556-bb33-c4fb1567f924
 blueprint: blog_post
 title: "What's in a Role? The Hidden Cost of Job Title Mismatches"
 date: 1773187200
+published: false
 updated_by: 1
 updated_at: 1710000000
 excerpt: "When job titles don't match actual responsibilities, everyone loses. Here's how misaligned roles damage productivity, ROI, and what you can do about it."

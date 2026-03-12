@@ -1,8 +1,8 @@
 ---
 id: draft-whats-in-a-role
-published: false
+published: true
 blueprint: blog_post
-title: "What's in a Role? The Hidden Cost of Job Title Mismatches (DRAFT)"
+title: "What's in a Role? The Hidden Cost of Job Title Mismatches"
 date: '2026-03-11 00:00'
 updated_by: a737e56f-c6b2-47c3-a0b2-7ff1ceca293f
 updated_at: 1773306376

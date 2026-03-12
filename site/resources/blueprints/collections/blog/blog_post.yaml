@@ -24,5 +24,18 @@ tabs:
           -
             handle: content
             field:
-              type: markdown
+              type: bard
               required: true
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - table
+              link_noopener: true
+              link_noreferrer: true
+              target_blank: true

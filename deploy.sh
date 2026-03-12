@@ -17,11 +17,7 @@ sleep 5
 
 # Install dependencies
 echo "Installing composer dependencies..."
-podman exec -u root statamic_app composer install --no-dev --optimize-autoloader
-
-# Fix permissions
-echo "Fixing permissions..."
-podman exec -u root statamic_app chown -R 1000:1000 /var/www/html
+podman exec statamic_app composer install --no-dev --optimize-autoloader
 
 # Clear caches
 echo "Clearing Statamic caches..."

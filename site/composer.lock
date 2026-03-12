@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b0324ee40a7917344be1ada647f43ee8",
+    "content-hash": "e6ed50a79e5004101a03f790ab3f9caf",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -5480,51 +5480,6 @@
                 }
             ],
             "time": "2026-02-26T17:21:13+00:00"
-        },
-        {
-            "name": "superinteractive/statamic-super-link",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/superinteractive/statamic-super-link.git",
-                "reference": "913fed938ea3871d5b7e33eae934b3fa7f7f4aeb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/superinteractive/statamic-super-link/zipball/913fed938ea3871d5b7e33eae934b3fa7f7f4aeb",
-                "reference": "913fed938ea3871d5b7e33eae934b3fa7f7f4aeb",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.3",
-                "statamic/cms": "^6.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "SuperInteractive\\SuperLink\\ServiceProvider"
-                    ]
-                },
-                "statamic": {
-                    "name": "Super Link",
-                    "description": "Super Link Fieldtype for Statamic."
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "SuperInteractive\\SuperLink\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "support": {
-                "issues": "https://github.com/superinteractive/statamic-super-link/issues",
-                "source": "https://github.com/superinteractive/statamic-super-link/tree/v3.0.0"
-            },
-            "time": "2026-01-29T15:11:18+00:00"
         },
         {
             "name": "symfony/clock",

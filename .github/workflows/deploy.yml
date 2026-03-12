@@ -12,16 +12,22 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Deploy to VPS
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          source: "site/*"
-          target: ${{ secrets.VPS_PATH }}
-          strip_components: 1
-          rm: true
-          excludes: ".env,.env.*,node_modules/*,vendor/*,storage/framework/cache/*"
+        run: |
+          echo "${{ secrets.VPS_SSH_KEY }}" > deploy_key
+          chmod 600 deploy_key
+          rsync -avz --delete \
+            -e "ssh -i deploy_key -o StrictHostKeyChecking=no" \
+            --exclude='.env' \
+            --exclude='.env.*' \
+            --exclude='node_modules' \
+            --exclude='vendor' \
+            --exclude='storage/framework/cache/*' \
+            --exclude='storage/logs/*' \
+            --exclude='.composer' \
+            --exclude='.ash_history' \
+            ./site/ \
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:${{ secrets.VPS_PATH }}/site/
+          rm deploy_key
       
       - name: Clear Statamic cache
         uses: appleboy/ssh-action@v1.0.3

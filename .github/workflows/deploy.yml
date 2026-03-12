@@ -15,18 +15,18 @@ jobs:
         run: |
           echo "${{ secrets.VPS_SSH_KEY }}" > deploy_key
           chmod 600 deploy_key
-          rsync -avz --delete \
-            -e "ssh -i deploy_key -o StrictHostKeyChecking=no" \
+          rsync -avzh --progress \
+            -e "ssh -i deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
             --exclude='.env' \
             --exclude='.env.*' \
-            --exclude='node_modules' \
-            --exclude='vendor' \
-            --exclude='storage/framework/cache/*' \
-            --exclude='storage/logs/*' \
-            --exclude='.composer' \
+            --exclude='node_modules/' \
+            --exclude='vendor/' \
+            --exclude='storage/framework/cache/' \
+            --exclude='storage/logs/' \
+            --exclude='.composer/' \
             --exclude='.ash_history' \
             ./site/ \
-            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:${{ secrets.VPS_PATH }}/site/
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:${{ secrets.VPS_PATH }}/site/ || { echo "Rsync failed with exit code $?"; exit 1; }
           rm deploy_key
       
       - name: Clear Statamic cache

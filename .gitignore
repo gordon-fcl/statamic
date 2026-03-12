@@ -1,0 +1,42 @@
+# Dependencies
+site/vendor/
+site/node_modules/
+
+# Build artifacts
+site/public/build/
+site/public/hot
+site/public/css/
+site/public/js/
+
+# Environment
+site/.env
+site/.env.*
+!site/.env.example
+
+# Composer cache
+site/.composer/
+
+# Shell history
+site/.ash_history
+
+# AWS credentials
+*.csv
+*accessKeys*
+
+# Storage
+site/storage/*.key
+site/storage/framework/cache/*
+site/storage/framework/sessions/*
+site/storage/framework/views/*
+site/storage/logs/*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
